@@ -14,7 +14,7 @@ Uninstall Splunk
 ```
 
 Confirm the installation:
-By default Splunk installs in /opt/splunk
+By default Splunk installs in cd /opt/splunk
 
 
 Verify that the splunk user and group exist
