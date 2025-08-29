@@ -6,7 +6,7 @@ Splunk is a leading (SIEM) platform used to collect, index, and analyze machine 
 
 # Objective
 
-In this Splunk Lab, I will install Splunk from scratch and configure its static IP address within the same network topology. a comprehensive step-by-step guide to my process, which includes practical steps that will be useful for my future reference.
+In this Splunk Lab, I will install Splunk from scratch and configure its static IP address within the same network topology. A comprehensive step-by-step guide to my process, which includes practical steps that will be useful for me to refer to in the future.
 
 # Skills Learned
 
@@ -56,4 +56,4 @@ To ensure proper organization of collected telemetry within the homelab, a dedic
 
 # Conclusion
 
-This lab successfully demonstrates the installation and initial configuration of Splunk Enterprise within the homelab network. By assigning a static IP, preparing the server for log ingestion, and defining a dedicated lab index, we ensure that all telemetry from Windows endpoints, Active Directory, and Sysmon can be properly centralized and analyzed. This setup lays the foundation for building detection use cases, monitoring dashboards, and simulating real-world attack scenarios.
+This lab successfully demonstrates the installation and initial configuration of Splunk Enterprise within the homelab network. By assigning a static IP, preparing the server for log ingestion, and defining a dedicated lab index, we ensure that all telemetry from Windows endpoints, Active Directory, Zeek & Surucata and Sysmon can be properly centralized and analyzed. This setup lays the foundation for building detection use cases, monitoring dashboards, and simulating real-world attack scenarios.
