@@ -14,9 +14,13 @@ In this Splunk Lab, I will install Splunk from scratch and configure its static 
 - Configuring a static IP address to ensure it remains on the same network as the Active Directory domain controller and Windows endpoints.
 - Preparing the instance to collect logs from various sources in the lab network.
 
-# Tools Used
+# Technologies/Stacks
 
-Ubuntu Server (for Splunk server)
+- Splunk Enterprise Platform
+- Ubuntu Server (for Splunk server)
+- Static IP Configuration
+- Custom Indexing
+- Forwarder Integration Ready
 
 ---
 
@@ -35,3 +39,21 @@ Ubuntu Server (for Splunk server)
 Apply the changes: `sudo netplan apply`
 
 ![static-ipapply](https://github.com/user-attachments/assets/9708344f-b3f6-4824-88e2-9ca15908a167)
+#
+
+# Connecting the Web GUI with the Static IP
+
+![splunk-web](https://github.com/user-attachments/assets/ad65e90f-6aba-492a-892e-2301d9772f2d)
+#
+
+# Lab Indexing Strategy
+
+To ensure proper organization of collected telemetry within the homelab, a dedicated Splunk index will be created. This approach guarantees that all events ingested from the lab environment, including Active Directory logs, Sysmon telemetry, and Windows event logs, are stored in a specific location.
+
+![homelab-detect](https://github.com/user-attachments/assets/21e5d67e-f961-49da-b982-e47e6ce76820)
+
+---
+
+# Conclusion
+
+This lab successfully demonstrates the installation and initial configuration of Splunk Enterprise within the homelab network. By assigning a static IP, preparing the server for log ingestion, and defining a dedicated lab index, we ensure that all telemetry from Windows endpoints, Active Directory, and Sysmon can be properly centralized and analyzed. This setup lays the foundation for building detection use cases, monitoring dashboards, and simulating real-world attack scenarios.
