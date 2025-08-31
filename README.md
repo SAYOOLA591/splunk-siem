@@ -32,7 +32,7 @@ In this Splunk Lab, I will install Splunk from scratch and configure its static 
 #
 
 # Setting Static IP Address and Default Route:
-  - Configured a static IP address for the Splunk server and defined a default route with the gateway 192.168.1.20. `sudo nano /etc/netplan/00-installer-config.yaml`
+  - Configured a static IP address for the Splunk server and defined a default route with the gateway 192.168.1.1. `sudo nano /etc/netplan/00-installer-config.yaml`
 
 ![static-netplan](https://github.com/user-attachments/assets/5bf0d4f5-8b54-4177-91f4-106e4fe9d63d)
 
@@ -46,7 +46,7 @@ Apply the changes: `sudo netplan apply`
 ![splunk-web](https://github.com/user-attachments/assets/ad65e90f-6aba-492a-892e-2301d9772f2d)
 #
 
-# Lab Indexing Strategy
+# Indexing Strategy
 
 To ensure proper organization of collected telemetry within the homelab, a dedicated Splunk index will be created. This approach guarantees that all events ingested from the lab environment, including Active Directory logs, Sysmon telemetry, and Windows event logs, are stored in a specific location.
 
